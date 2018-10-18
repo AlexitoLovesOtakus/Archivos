@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtImprimir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/editTextContenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLeerInterna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leer Memoria Interna"
+        app:layout_constraintBottom_toTopOf="@+id/btnEscribirExterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEscribirInterna" />
+
+    <Button
+        android:id="@+id/btnEscribirInterna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Escribir Memoria Interna"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeerInterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContenido" />
+
+    <Button
+        android:id="@+id/btnEscribirExterna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Escribir Externa"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeerExterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeerInterna" />
+
+    <Button
+        android:id="@+id/btnLeerExterna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leer Externa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEscribirExterna" />
+
+    <EditText
+        android:id="@+id/editTextContenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escribir Texto"
+        app:layout_constraintBottom_toTopOf="@+id/btnEscribirInterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtImprimir" />
+
+</android.support.constraint.ConstraintLayout>
